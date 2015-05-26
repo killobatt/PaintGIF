@@ -12,6 +12,7 @@
 @interface Drawing (Drawing_Rendering)
 
 - (UIImage *)animatedImage;
+- (UIImage *)smoothAnimatedImage;
 
 + (void)drawStrokes:(NSArray *)strokes;
 

@@ -43,7 +43,7 @@
     self.previewImageView.hidden = !self.previewState;
     self.previewDrawingButton.selected = self.previewState;
     
-    self.previewImageView.image = [self.drawingView.drawing animatedImage];
+    self.previewImageView.image = [self.drawingView.drawing smoothAnimatedImage];
     [self.previewImageView startAnimating];
 }
 
