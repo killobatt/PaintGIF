@@ -12,5 +12,6 @@
 #import "Drawing.h"
 #import "Stroke.h"
 #import "StrokePoint.h"
+#import "Drawing+Rendering.h"
 
 #endif

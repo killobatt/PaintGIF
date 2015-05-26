@@ -7,6 +7,7 @@
 //
 
 @import Foundation;
+@import CoreGraphics;
 
 
 @class Stroke;
@@ -14,6 +15,8 @@
 
 
 @interface Drawing : NSObject
+
+@property (nonatomic, assign) CGSize size;
 
 @property (nonatomic, strong, readonly) NSArray *strokes;
 

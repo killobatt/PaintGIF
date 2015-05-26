@@ -22,6 +22,7 @@
 		CBC33D9F1B15073800950B33 /* DrawingGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC33D9E1B15073800950B33 /* DrawingGestureRecognizer.m */; };
 		CBC33DA21B150CA900950B33 /* StrokePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC33DA11B150CA900950B33 /* StrokePoint.m */; };
 		CBC33DA91B151C5B00950B33 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CBC33DA81B151C5B00950B33 /* Podfile */; };
+		CBC33DAC1B151EA500950B33 /* Drawing+Rendering.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC33DAB1B151EA500950B33 /* Drawing+Rendering.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		CBC33DA11B150CA900950B33 /* StrokePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StrokePoint.m; path = Drawing/StrokePoint.m; sourceTree = "<group>"; };
 		CBC33DA71B15156E00950B33 /* DrawingEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DrawingEngine.h; path = Drawing/DrawingEngine.h; sourceTree = "<group>"; };
 		CBC33DA81B151C5B00950B33 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; };
+		CBC33DAA1B151EA500950B33 /* Drawing+Rendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Drawing+Rendering.h"; sourceTree = "<group>"; };
+		CBC33DAB1B151EA500950B33 /* Drawing+Rendering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Drawing+Rendering.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,8 @@
 				CBC33D981B15035F00950B33 /* Stroke.m */,
 				CBC33DA01B150CA900950B33 /* StrokePoint.h */,
 				CBC33DA11B150CA900950B33 /* StrokePoint.m */,
+				CBC33DAA1B151EA500950B33 /* Drawing+Rendering.h */,
+				CBC33DAB1B151EA500950B33 /* Drawing+Rendering.m */,
 			);
 			name = Drawing;
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC33DAC1B151EA500950B33 /* Drawing+Rendering.m in Sources */,
 				CBC33DA21B150CA900950B33 /* StrokePoint.m in Sources */,
 				CBC33D9F1B15073800950B33 /* DrawingGestureRecognizer.m in Sources */,
 				CBC33D701B15030D00950B33 /* AppDelegate.m in Sources */,

@@ -37,4 +37,9 @@
     [self.mutableStrokes addObject:stroke];
 }
 
+- (void)render
+{
+    
+}
+
 @end

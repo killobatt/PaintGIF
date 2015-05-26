@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>745D445C-9988-4E81-A691-C7629ED553BA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PaintGIF</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ADD8A5B2E323753DDF68917171D9B502D4E51477</key>
+		<string>https://github.com/killobatt/PaintGIF.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PaintGIF.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ADD8A5B2E323753DDF68917171D9B502D4E51477</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/killobatt/PaintGIF.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ADD8A5B2E323753DDF68917171D9B502D4E51477</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ADD8A5B2E323753DDF68917171D9B502D4E51477</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PaintGIF</string>
+		</dict>
+	</array>
+</dict>
+</plist>

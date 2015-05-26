@@ -46,6 +46,7 @@
 - (void)setupView
 {
     self.drawing = [[Drawing alloc] init];
+    self.drawing.size = self.bounds.size;
     
     self.gestureRecognizer = [[DrawingGestureRecognizer alloc] init];
     self.gestureRecognizer.delegate = self;
@@ -56,33 +57,13 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();
+    self.drawing.size = self.bounds.size;
     
     CGContextSetStrokeColorWithColor(context, [UIColor blackColor].CGColor);
-    [self drawStrokes:self.drawing.strokes];
+    [Drawing drawStrokes:self.drawing.strokes];
     
     CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
-    [self drawStrokes:self.gestureRecognizer.currentStrokes];
-}
-
-- (void)drawStrokes:(NSArray *)strokes
-{
-    for (Stroke *stroke in strokes) {
-        if (stroke.strokePoints.count > 0) {
-            UIBezierPath *strokePath = [UIBezierPath bezierPath];
-            StrokePoint *strokePoint = stroke.strokePoints.firstObject;
-            [strokePath moveToPoint:strokePoint.point];
-            
-            for (NSUInteger i = 1; i < stroke.strokePoints.count; i++) {
-                StrokePoint *strokePoint = stroke.strokePoints[i];
-                [strokePath addLineToPoint:strokePoint.point];
-            }
-            
-            strokePath.lineWidth = 10;
-            strokePath.lineCapStyle = kCGLineCapRound;
-            strokePath.lineJoinStyle = kCGLineJoinRound;
-            [strokePath stroke];
-        }
-    }
+    [Drawing drawStrokes:self.gestureRecognizer.currentStrokes];
 }
 
 #pragma mark - DrawingGestureRecognizer Delegate

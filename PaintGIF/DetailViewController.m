@@ -7,8 +7,15 @@
 //
 
 #import "DetailViewController.h"
+#import "DrawingView.h"
+#import "DrawingEngine.h"
 
 @interface DetailViewController ()
+
+@property (assign, nonatomic) BOOL previewState;
+@property (weak, nonatomic) IBOutlet DrawingView *drawingView;
+@property (weak, nonatomic) IBOutlet UIImageView *previewImageView;
+@property (weak, nonatomic) IBOutlet UIButton *previewDrawingButton;
 
 @end
 
@@ -21,6 +28,7 @@
         _detailItem = newDetailItem;
             
         // Update the view.
+        self.previewState = NO;
         [self configureView];
     }
 }
@@ -30,7 +38,15 @@
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
     }
+    
+    self.drawingView.hidden = self.previewState;
+    self.previewImageView.hidden = !self.previewState;
+    self.previewDrawingButton.selected = self.previewState;
+    
+    self.previewImageView.image = [self.drawingView.drawing animatedImage];
+    [self.previewImageView startAnimating];
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,6 +57,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)previewToggled:(id)sender
+{
+    self.previewState = !self.previewState;
+    [self configureView];
 }
 
 @end
