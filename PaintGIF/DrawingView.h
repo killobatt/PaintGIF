@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  DrawingView.h
 //  PaintGIF
 //
 //  Created by Vjacheslav Volodjko on 26.05.15.
@@ -8,10 +8,10 @@
 
 @import UIKit;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class Drawing;
 
-@property (strong, nonatomic) UIWindow *window;
+@interface DrawingView : UIView
 
+@property (nonatomic, strong) Drawing *drawing;
 
 @end
-

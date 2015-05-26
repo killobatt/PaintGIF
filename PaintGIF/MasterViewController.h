@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Vjacheslav Volodjko. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 @class DetailViewController;
 
