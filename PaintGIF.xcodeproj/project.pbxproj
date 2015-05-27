@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E4F294C1B15AFD200B281E5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4F294B1B15AFD200B281E5 /* AssetsLibrary.framework */; };
 		428DC38FE1C11F1A8E8ADEA1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD60F227B60BB42606C7385C /* libPods.a */; };
 		CBC33D6D1B15030D00950B33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC33D6C1B15030D00950B33 /* main.m */; };
 		CBC33D701B15030D00950B33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC33D6F1B15030D00950B33 /* AppDelegate.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E4F294B1B15AFD200B281E5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		69D1F11003B9322C127FE64C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7493FD0CA8734AC1D44F479D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BD60F227B60BB42606C7385C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +67,7 @@
 		CBC33DA01B150CA900950B33 /* StrokePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StrokePoint.h; path = Drawing/StrokePoint.h; sourceTree = "<group>"; };
 		CBC33DA11B150CA900950B33 /* StrokePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StrokePoint.m; path = Drawing/StrokePoint.m; sourceTree = "<group>"; };
 		CBC33DA71B15156E00950B33 /* DrawingEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DrawingEngine.h; path = Drawing/DrawingEngine.h; sourceTree = "<group>"; };
-		CBC33DA81B151C5B00950B33 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; };
+		CBC33DA81B151C5B00950B33 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CBC33DAA1B151EA500950B33 /* Drawing+Rendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Drawing+Rendering.h"; sourceTree = "<group>"; };
 		CBC33DAB1B151EA500950B33 /* Drawing+Rendering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Drawing+Rendering.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E4F294C1B15AFD200B281E5 /* AssetsLibrary.framework in Frameworks */,
 				428DC38FE1C11F1A8E8ADEA1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +189,7 @@
 		FD83E860054546FEECEE2BFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E4F294B1B15AFD200B281E5 /* AssetsLibrary.framework */,
 				BD60F227B60BB42606C7385C /* libPods.a */,
 			);
 			name = Frameworks;

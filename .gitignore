@@ -19,3 +19,7 @@ Pods/Target Support Files/Pods-AnimatedGIFImageSerialization/Pods-AnimatedGIFIma
 Pods/Target Support Files/Pods-AnimatedGIFImageSerialization/Pods-AnimatedGIFImageSerialization-prefix.pch
 Pods/Target Support Files/Pods-AnimatedGIFImageSerialization/Pods-AnimatedGIFImageSerialization-Private.xcconfig
 Pods/Target Support Files/Pods-AnimatedGIFImageSerialization/Pods-AnimatedGIFImageSerialization.xcconfig
+PaintGIF.xcodeproj/xcuserdata
+PaintGIF.xcworkspace/xcuserdata
+Podfile.lock
+Pods

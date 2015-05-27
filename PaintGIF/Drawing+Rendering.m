@@ -27,33 +27,18 @@
 
 - (UIImage *)renderStrokes:(NSArray *)strokes byTimePoint:(NSTimeInterval)timePoint
 {
-    UIGraphicsBeginImageContextWithOptions(self.size, NO, [[UIScreen mainScreen] scale]);
+    UIGraphicsBeginImageContextWithOptions(self.size, YES, [[UIScreen mainScreen] scale]);
+    
+    CGContextRef contextRef = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(contextRef, [UIColor whiteColor].CGColor);
+    CGContextFillRect(contextRef, CGRectMake(0, 0, self.size.width, self.size.height));
+    
     [self.class drawStrokes:strokes byTimePoint:timePoint];
+    
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return image;
 }
-
-//+ (void)drawStrokes:(NSArray *)strokes
-//{
-//    for (Stroke *stroke in strokes) {
-//        if (stroke.strokePoints.count > 0) {
-//            UIBezierPath *strokePath = [UIBezierPath bezierPath];
-//            StrokePoint *strokePoint = stroke.strokePoints.firstObject;
-//            [strokePath moveToPoint:strokePoint.point];
-//            
-//            for (NSUInteger i = 1; i < stroke.strokePoints.count; i++) {
-//                StrokePoint *strokePoint = stroke.strokePoints[i];
-//                [strokePath addLineToPoint:strokePoint.point];
-//            }
-//            
-//            strokePath.lineWidth = 10;
-//            strokePath.lineCapStyle = kCGLineCapRound;
-//            strokePath.lineJoinStyle = kCGLineJoinRound;
-//            [strokePath stroke];
-//        }
-//    }
-//}
 
 #pragma mark - Smooth animation
 
@@ -102,7 +87,7 @@
 
 - (NSTimeInterval)fps
 {
-    return 20.0f;
+    return 30.0f;
 }
 
 + (void)drawStrokes:(NSArray *)strokes
